@@ -1,0 +1,115 @@
+body {
+  background: #f7f7f7;
+  height: 100vh;
+}
+/* H A M   M E N U   I C O N */
+.trigger {
+  background: #0684C4;
+  display: block;
+  cursor: pointer;
+  height: 10rem;
+  width: 10rem;
+  left: 50%;
+  margin: -4rem 0 0 -4rem;
+  position: absolute;
+  text-decoration: none;
+  top: 45%;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.line,
+.line:before,
+.line:after {
+  background: #f7f7f7;
+  display: block;
+}
+.line {
+  height: 0.70rem;
+  left: 12.5%;
+  margin: -3% 0 0 0;
+  position: absolute;
+  top: 50%;
+  width: 75%;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  transition: all 0s linear;
+}
+.line:before,
+.line:after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.line:before {
+  -webkit-transform: translateY(-300%);
+  -moz-transform: translateY(-300%);
+  -o-transform: translateY(-300%);
+  -ms-transform: translateY(-300%);
+  transform: translateY(-300%);
+}
+.line:after {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -o-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%);
+}
+/* A D D  C L A S S */
+.close .line {
+  background-color: transparent;
+}
+.close .line:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.close .line:after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.trigger:hover {
+  background: #00C993;
+}
+.trigger:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.line:active {
+  background-color: transparent;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.line:hover:before,
+.line:hover,
+.line:hover:after {
+  background: #0684C4;
+}
+.close .line:hover {
+  background-color: transparent;
+}
+.close .line:hover:before,
+.close .line:hover:after {
+  background: #0684C4;
+}
